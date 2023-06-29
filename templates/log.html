@@ -2,13 +2,36 @@
 <html>
   <head>
     <title> Assassin's Creed </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "icon" href = 
 "https://jovian-web-dev--bhuvansun.repl.co/static/acvalhalla.jpeg" 
         type = "image/jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
+      .bodytext {
+        font-family: Roboto;
+        color: rgb(80, 80, 80)
+      }
+      
+      h1 {
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: normal;
+        color: rgb(50, 50, 50);
+        text-align: center;
+      }
+
+      h2 {
+        font-family: Roboto;
+        font-size: 32px;
+        color: rgb(100, 100, 100);
+        text-align: center;
+        font-weight: normal;
+      }
+      
+      #container {
+        max-width: 720px;
+        margin: 0 auto 0 auto;
+      }
+      
       #banner {
         display: block;
         margin-left: auto;
@@ -19,11 +42,11 @@
     </style>
   </head>
   <body>
-    <div class = 'container'>
-      <h1 class = 'text-center mt-2 mb-4'> Assassin's Creed </h1>
-      <img class = 'img-fluid' id = 'banner' src = "https://jovian-web-dev--bhuvansun.repl.co/static/ezio.webp">
-    <h2 class = 'text-center'> About Assassin's Creed </h2>
-    <p class = 'lead'>
+    <div id = 'container'>
+      <h1> Assassin's Creed </h1>
+      <img id = 'banner' src = "https://jovian-web-dev--bhuvansun.repl.co/static/ezio.webp">
+    <h2> About Assassin's Creed </h2>
+    <p class = 'bodytext'>
       In the vast tapestry of history, where shadows and secrets intertwine, emerges Assassin's Creed, a majestic odyssey that transcends
       time itself. It is a symphony of blood and blades, where the noble Order of Assassins battles against the tyrannical grasp of
       corruption and oppression. Through the eyes of their chosen champions, the Animus unravels the strands of ancestral memories,
@@ -34,11 +57,11 @@
       master the art of stealth, combat, and free will, as we become the ultimate agents of change in an epic struggle that echoes through
       the ages.
     </p>
-    <h2 class = 'text-center mt-2 mb-4'> Assassins </h2>
-    <p> Todo - Show something here </p>
-    <div class = 'text-center'>
-      <button class = 'btn btn-primary btn-lg'> Enter the Animus </button>
-      <p class = 'mt-4'> Copyright BC 422, Alexios </p>
+    <h2> Assassins </h2>
+    <p class = 'bodytext'> Todo - Show something here </p>
+    <div style = 'text-align: center;'>
+      <button> Enter the Animus </button>
+      <p> Copyright BC 422, Alexios </p>
     </div>
     </div>
   </body>
