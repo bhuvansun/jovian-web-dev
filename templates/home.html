@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class = 'container'>
-      <h1 class = 'text-center mt-2 mb-4'> Assassin's Creed </h1>
+      <h1 class = 'text-center mt-2 mb-4'> Assassin's Creed @{{company_name}} </h1>
       <img class = 'img-fluid' id = 'banner' src = "https://jovian-web-dev--bhuvansun.repl.co/static/ezio.webp">
     <h2 class = 'text-center'> About Assassin's Creed </h2>
     <p class = 'lead'>
@@ -35,10 +35,12 @@
       the ages.
     </p>
     <h2 class = 'text-center mt-2 mb-4'> Assassins </h2>
-    <p> This is a strange website: Do not take anything seriously.
-    <br>
-      {{jobs}}
-    </p>
+    <div> This is a strange website: Do not take anything seriously.
+    <br> <br>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
     <div class = 'text-center'>
       <button class = 'btn btn-primary btn-lg'> Enter the Animus </button>
       <p class = 'mt-4'> Copyright 422 BC, @Alexios The Eagle Bearer </p>
